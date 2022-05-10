@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+     
+        <title>Encriptador - Oracle ONE Alura</title>    
+        <link rel="stylesheet" href="./style.css">  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+
+        <header>
+            <div class="logoAlura">
+                <section class="box">
+                    
+                    <h1 >
+                        <img src="./imagenes/Logo.png" alt="alura, programacion" class="box__logo">
+                    </h1>
+                    
+                </section>
+            </div>
+        </header>
+
+        <main>
+            <div class="contenedor-sm">
+                <section class="form">
+                    <textarea name="texto" id="texto" cols="30" rows="15" class="form__texto" placeholder="Ingrese el texto aquí"></textarea>
+
+                    <p class="form__info"><i class="fa fa-info-circle" aria-hidden="true"></i>Solo letras minúsculas y sin acentos</p>
+                    
+                    <button type="button" id="btn-encriptar" class="form__boton-encriptar" onclick="();">Encriptar</button>
+                    <button type="button" id="btn-desencriptar" class="form__boton-desencriptar">Desencriptar</button>
+                </section>
+
+                <aside class="panel">
+                    <img src="./imagenes/Muñeco.png" alt="munheco" class="panel__munheco" id="panel-munheco">
+                    <h3 class="panel__leyenda" id="panel-leyenda">Ningún mensaje fue <br> encontrado</h3>
+                    <textarea name="cifrado" id="cifrado" cols="30" rows="8" class="panel__texto-cifrado"></textarea>
+
+                    <button type="button" class="panel__boton-copiar" onclick="copiarTexto();">Copiar texto</button>
+                </aside>
+            </div>
+        </main>
+
+        <footer>
+                         
+                <p>Copyright &copy; 2022 - Gimenez j.Rodrigo .</p>
+   
+
+        </footer>
+        
+    </body>
+    <script src="./encriptador.js"></script>
+    </html>
